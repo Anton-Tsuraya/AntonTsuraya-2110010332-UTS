@@ -69,7 +69,7 @@ public class EditBukuAlamat extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         taalamat = new javax.swing.JTextArea();
         btnedit = new javax.swing.JButton();
-        btnclear = new javax.swing.JButton();
+        btncancel = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         tfid = new javax.swing.JTextField();
 
@@ -103,7 +103,12 @@ public class EditBukuAlamat extends javax.swing.JFrame {
             }
         });
 
-        btnclear.setText("Clear");
+        btncancel.setText("Cancel");
+        btncancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncancelActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Id Buku");
 
@@ -144,7 +149,7 @@ public class EditBukuAlamat extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(btnedit, javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(btnclear, javax.swing.GroupLayout.Alignment.TRAILING))))))))
+                                            .addComponent(btncancel, javax.swing.GroupLayout.Alignment.TRAILING))))))))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -163,7 +168,7 @@ public class EditBukuAlamat extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbltelepon)
                     .addComponent(tftelepon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnclear))
+                    .addComponent(btncancel))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblkelamin)
@@ -220,6 +225,16 @@ public class EditBukuAlamat extends javax.swing.JFrame {
             dispose();
     }//GEN-LAST:event_btneditActionPerformed
 
+    private void btncancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelActionPerformed
+        // TODO add your handling code here:
+                tfid.setText("");
+        tfnama.setText("");
+        tftelepon.setText("");
+        btnGroupKelamin.clearSelection();
+        taalamat.setText("");
+        dispose();
+    }//GEN-LAST:event_btncancelActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -257,7 +272,7 @@ public class EditBukuAlamat extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup btnGroupKelamin;
-    private javax.swing.JButton btnclear;
+    private javax.swing.JButton btncancel;
     private javax.swing.JButton btnedit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
