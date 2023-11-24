@@ -203,7 +203,7 @@ public class EditBukuAlamat extends javax.swing.JFrame {
 
     private void btneditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditActionPerformed
         // TODO add your handling code here:
-                int id = Integer.parseInt(tfid.getText());
+        int id = Integer.parseInt(tfid.getText());
         String nama = tfnama.getText();
         String telepon = tftelepon.getText();
         String kelamin;
@@ -227,7 +227,7 @@ public class EditBukuAlamat extends javax.swing.JFrame {
 
     private void btncancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelActionPerformed
         // TODO add your handling code here:
-                tfid.setText("");
+        tfid.setText("");
         tfnama.setText("");
         tftelepon.setText("");
         btnGroupKelamin.clearSelection();
