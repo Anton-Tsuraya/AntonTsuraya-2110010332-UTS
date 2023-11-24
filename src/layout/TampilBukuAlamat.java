@@ -1,5 +1,5 @@
 
-package GUI;
+package layout;
 
 import java.util.ArrayList;
 import javax.swing.JFrame;

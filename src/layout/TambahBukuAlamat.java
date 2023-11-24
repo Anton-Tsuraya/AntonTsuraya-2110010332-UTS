@@ -1,5 +1,5 @@
 
-package GUI;
+package layout;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;

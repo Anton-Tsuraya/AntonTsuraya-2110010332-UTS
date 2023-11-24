@@ -1,5 +1,5 @@
 
-package GUI;
+package layout;
 
 
 public class EditBukuAlamat extends javax.swing.JFrame {
